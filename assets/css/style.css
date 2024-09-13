@@ -1,0 +1,170 @@
+@font-face {
+  font-family: PlayWrite;
+  src: url(../fonts/PlaywriteCU-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: reddit;
+  src: url(../fonts/RedditSansCondensed-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ! header */
+
+html {
+background-color: rgba(255, 166, 0, 0.712);
+  font-family: reddit, Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-family: PlayWrite, Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+header {
+  padding: 30px;
+  background-image: url(../images/jakub-kapusnak-vnNFWKY7Tj4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* # Form */
+
+label {
+  font-size: 1.2rem;
+}
+
+.form {
+  padding: 30px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.462);
+  display: grid;
+  gap: 30px;
+}
+
+.form article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+#submit {
+  margin : auto 0;
+}
+
+.form div {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+#bought {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quantity {
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+#submit {
+  height: 50px;
+  background-color: rgba(255, 208, 0, 0.26);
+  border-radius: 10px;
+  color: white;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#submit:hover {
+  background-color: rgba(255, 255, 255, 0.343);
+}
+
+input:focus-visible, #unit:focus-visible {
+  outline: none;
+  inline-size: none;
+  background-color: rgba(255, 255, 255, 0.343);
+}
+
+input {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.632);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+#unit {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.632);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* # List */
+#tableBox {
+  border: 2px solid rgba(250, 0, 0, 0.443);
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.474);
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+#itemsList, #boughtList {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.table {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6,1fr);
+  background-color:rgba(250, 0, 0, 0.443);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.list {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6,1fr);
+  border-bottom: 1px solid rgba(250, 0, 0, 0.443);    
+  justify-items: start;
+  padding-bottom: 2px;
+}
+
+.deleteButton {
+  background-color: rgba(250, 0, 0, 0.443);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+}
+
+.deleteButton:hover {
+  color: rgba(250, 0, 0, 0.443);
+  box-shadow: 0px 0px 5px;
+}
+
+.tableTitle {
+  font-family: PlayWrite, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}

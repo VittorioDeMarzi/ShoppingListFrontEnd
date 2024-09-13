@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Shopping List</h1>
+      <section class="form">
+        <article>
+          <div>
+            <label for="name">Product Name</label>
+            <input type="text" name="name" id="name" placeholder="" required />
+          </div>
+          <div class="quantity">
+            <div>
+              <label for="quantity">Quantity</label>
+              <input type="text" name="quantity" id="quantity" />
+            </div>
+            <div>
+              <label for="unit">Unit</label>
+              <select name="unit" id="unit">
+                <option value="">Select a unit</option>
+                <option value="grams">Grams</option>
+                <option value="kilograms">Kilograms</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="liters">Liters</option>
+                <option value="units">Units</option>
+                <option value="bottles">Bottles</option>
+                <option value="packages">Packages</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="shop">Shop</label>
+            <input type="text" name="shop" id="shop" />
+          </div>
+          <div>
+            <label for="note">Note</label>
+            <input type="text" name="note" id="note" />
+          </div>
+        </article>
+        <button id="submit" type="submit" onclick="">Add Product</button>
+      </section>
+    </header>
+    <main>
+      <div id="tableBox">
+        <h2 class="tableTitle">Products to buy</h2>
+        <article class="table">
+          <div><h2>WHAT</h2></div>
+          <div><h2>QUANTITY</h2></div>
+          <div><h2>WHERE</h2></div>
+          <div><h2>NOTE</h2></div>
+          <div><h2>MARK AS BOUGHT</h2></div>
+          <div><h2></h2></div>
+        </article>
+        <section id="itemsList"></section>
+        <h2 class="tableTitle">Done!</h2>
+        <article class="table">
+          <div><h2>WHAT</h2></div>
+          <div><h2>QUANTITY</h2></div>
+          <div><h2>WHERE</h2></div>
+          <div><h2>NOTE</h2></div>
+          <div><h2>BACK TO SHOPPING LIST</h2></div>
+          <div><h2></h2></div>
+        </article>
+        <section id="boughtList"></section>
+
+      </div>
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
